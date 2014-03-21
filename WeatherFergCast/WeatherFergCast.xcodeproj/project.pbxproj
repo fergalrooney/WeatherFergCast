@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		51BE16B576094AF7B888CD03 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECEB0E80EABE4BF59CD61C50 /* libPods.a */; };
+		C25531B018DBC20C0089D762 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25531AF18DBC20C0089D762 /* Foundation.framework */; };
+		C25531B218DBC20C0089D762 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25531B118DBC20C0089D762 /* CoreGraphics.framework */; };
+		C25531B418DBC20C0089D762 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25531B318DBC20C0089D762 /* UIKit.framework */; };
+		C25531BA18DBC20C0089D762 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C25531B818DBC20C0089D762 /* InfoPlist.strings */; };
+		C25531BC18DBC20C0089D762 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C25531BB18DBC20C0089D762 /* main.m */; };
+		C25531C018DBC20C0089D762 /* WFCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C25531BF18DBC20C0089D762 /* WFCAppDelegate.m */; };
+		C25531C218DBC20C0089D762 /* WFCImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C25531C118DBC20C0089D762 /* WFCImages.xcassets */; };
+		C25531C918DBC20C0089D762 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25531C818DBC20C0089D762 /* XCTest.framework */; };
+		C25531CA18DBC20C0089D762 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25531AF18DBC20C0089D762 /* Foundation.framework */; };
+		C25531CB18DBC20C0089D762 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25531B318DBC20C0089D762 /* UIKit.framework */; };
+		C25531D318DBC20C0089D762 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C25531D118DBC20C0089D762 /* InfoPlist.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C25531CC18DBC20C0089D762 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C25531A418DBC20C0089D762 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C25531AB18DBC20C0089D762;
+			remoteInfo = WeatherFergCast;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C25531AC18DBC20C0089D762 /* WeatherFergCast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherFergCast.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C25531AF18DBC20C0089D762 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C25531B118DBC20C0089D762 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C25531B318DBC20C0089D762 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C25531B718DBC20C0089D762 /* WeatherFergCast-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WeatherFergCast-Info.plist"; sourceTree = "<group>"; };
+		C25531B918DBC20C0089D762 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C25531BB18DBC20C0089D762 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C25531BD18DBC20C0089D762 /* WeatherFergCast-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeatherFergCast-Prefix.pch"; sourceTree = "<group>"; };
+		C25531BE18DBC20C0089D762 /* WFCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WFCAppDelegate.h; sourceTree = "<group>"; };
+		C25531BF18DBC20C0089D762 /* WFCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WFCAppDelegate.m; sourceTree = "<group>"; };
+		C25531C118DBC20C0089D762 /* WFCImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = WFCImages.xcassets; sourceTree = "<group>"; };
+		C25531C718DBC20C0089D762 /* WeatherFergCastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherFergCastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C25531C818DBC20C0089D762 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C25531D018DBC20C0089D762 /* WeatherFergCastTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WeatherFergCastTests-Info.plist"; sourceTree = "<group>"; };
+		C25531D218DBC20C0089D762 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CD48C643127A416193DA4DE4 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		ECEB0E80EABE4BF59CD61C50 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C25531A918DBC20C0089D762 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C25531B218DBC20C0089D762 /* CoreGraphics.framework in Frameworks */,
+				C25531B418DBC20C0089D762 /* UIKit.framework in Frameworks */,
+				C25531B018DBC20C0089D762 /* Foundation.framework in Frameworks */,
+				51BE16B576094AF7B888CD03 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C25531C418DBC20C0089D762 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C25531C918DBC20C0089D762 /* XCTest.framework in Frameworks */,
+				C25531CB18DBC20C0089D762 /* UIKit.framework in Frameworks */,
+				C25531CA18DBC20C0089D762 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C25531A318DBC20C0089D762 = {
+			isa = PBXGroup;
+			children = (
+				C25531B518DBC20C0089D762 /* WeatherFergCast */,
+				C25531CE18DBC20C0089D762 /* WeatherFergCastTests */,
+				C25531AE18DBC20C0089D762 /* Frameworks */,
+				C25531AD18DBC20C0089D762 /* Products */,
+				CD48C643127A416193DA4DE4 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		C25531AD18DBC20C0089D762 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C25531AC18DBC20C0089D762 /* WeatherFergCast.app */,
+				C25531C718DBC20C0089D762 /* WeatherFergCastTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C25531AE18DBC20C0089D762 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C25531AF18DBC20C0089D762 /* Foundation.framework */,
+				C25531B118DBC20C0089D762 /* CoreGraphics.framework */,
+				C25531B318DBC20C0089D762 /* UIKit.framework */,
+				C25531C818DBC20C0089D762 /* XCTest.framework */,
+				ECEB0E80EABE4BF59CD61C50 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C25531B518DBC20C0089D762 /* WeatherFergCast */ = {
+			isa = PBXGroup;
+			children = (
+				C25531BE18DBC20C0089D762 /* WFCAppDelegate.h */,
+				C25531BF18DBC20C0089D762 /* WFCAppDelegate.m */,
+				C25531C118DBC20C0089D762 /* WFCImages.xcassets */,
+				C25531B618DBC20C0089D762 /* Supporting Files */,
+			);
+			path = WeatherFergCast;
+			sourceTree = "<group>";
+		};
+		C25531B618DBC20C0089D762 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C25531B718DBC20C0089D762 /* WeatherFergCast-Info.plist */,
+				C25531B818DBC20C0089D762 /* InfoPlist.strings */,
+				C25531BB18DBC20C0089D762 /* main.m */,
+				C25531BD18DBC20C0089D762 /* WeatherFergCast-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C25531CE18DBC20C0089D762 /* WeatherFergCastTests */ = {
+			isa = PBXGroup;
+			children = (
+				C25531CF18DBC20C0089D762 /* Supporting Files */,
+			);
+			path = WeatherFergCastTests;
+			sourceTree = "<group>";
+		};
+		C25531CF18DBC20C0089D762 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C25531D018DBC20C0089D762 /* WeatherFergCastTests-Info.plist */,
+				C25531D118DBC20C0089D762 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C25531AB18DBC20C0089D762 /* WeatherFergCast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C25531D818DBC20C0089D762 /* Build configuration list for PBXNativeTarget "WeatherFergCast" */;
+			buildPhases = (
+				1E9AF8B66C3A4253A8F0F9DF /* Check Pods Manifest.lock */,
+				C25531A818DBC20C0089D762 /* Sources */,
+				C25531A918DBC20C0089D762 /* Frameworks */,
+				C25531AA18DBC20C0089D762 /* Resources */,
+				DB86AD6843E943938AF2817A /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeatherFergCast;
+			productName = WeatherFergCast;
+			productReference = C25531AC18DBC20C0089D762 /* WeatherFergCast.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C25531C618DBC20C0089D762 /* WeatherFergCastTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C25531DB18DBC20C0089D762 /* Build configuration list for PBXNativeTarget "WeatherFergCastTests" */;
+			buildPhases = (
+				C25531C318DBC20C0089D762 /* Sources */,
+				C25531C418DBC20C0089D762 /* Frameworks */,
+				C25531C518DBC20C0089D762 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C25531CD18DBC20C0089D762 /* PBXTargetDependency */,
+			);
+			name = WeatherFergCastTests;
+			productName = WeatherFergCastTests;
+			productReference = C25531C718DBC20C0089D762 /* WeatherFergCastTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C25531A418DBC20C0089D762 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WFC;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Fergal Rooney";
+				TargetAttributes = {
+					C25531C618DBC20C0089D762 = {
+						TestTargetID = C25531AB18DBC20C0089D762;
+					};
+				};
+			};
+			buildConfigurationList = C25531A718DBC20C0089D762 /* Build configuration list for PBXProject "WeatherFergCast" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C25531A318DBC20C0089D762;
+			productRefGroup = C25531AD18DBC20C0089D762 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C25531AB18DBC20C0089D762 /* WeatherFergCast */,
+				C25531C618DBC20C0089D762 /* WeatherFergCastTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C25531AA18DBC20C0089D762 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C25531BA18DBC20C0089D762 /* InfoPlist.strings in Resources */,
+				C25531C218DBC20C0089D762 /* WFCImages.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C25531C518DBC20C0089D762 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C25531D318DBC20C0089D762 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E9AF8B66C3A4253A8F0F9DF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DB86AD6843E943938AF2817A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C25531A818DBC20C0089D762 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C25531BC18DBC20C0089D762 /* main.m in Sources */,
+				C25531C018DBC20C0089D762 /* WFCAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C25531C318DBC20C0089D762 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C25531CD18DBC20C0089D762 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C25531AB18DBC20C0089D762 /* WeatherFergCast */;
+			targetProxy = C25531CC18DBC20C0089D762 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C25531B818DBC20C0089D762 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C25531B918DBC20C0089D762 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C25531D118DBC20C0089D762 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C25531D218DBC20C0089D762 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C25531D618DBC20C0089D762 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C25531D718DBC20C0089D762 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C25531D918DBC20C0089D762 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD48C643127A416193DA4DE4 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WeatherFergCast/WeatherFergCast-Prefix.pch";
+				INFOPLIST_FILE = "WeatherFergCast/WeatherFergCast-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C25531DA18DBC20C0089D762 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD48C643127A416193DA4DE4 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WeatherFergCast/WeatherFergCast-Prefix.pch";
+				INFOPLIST_FILE = "WeatherFergCast/WeatherFergCast-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C25531DC18DBC20C0089D762 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WeatherFergCast.app/WeatherFergCast";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WeatherFergCast/WeatherFergCast-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WeatherFergCastTests/WeatherFergCastTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C25531DD18DBC20C0089D762 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WeatherFergCast.app/WeatherFergCast";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WeatherFergCast/WeatherFergCast-Prefix.pch";
+				INFOPLIST_FILE = "WeatherFergCastTests/WeatherFergCastTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C25531A718DBC20C0089D762 /* Build configuration list for PBXProject "WeatherFergCast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C25531D618DBC20C0089D762 /* Debug */,
+				C25531D718DBC20C0089D762 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C25531D818DBC20C0089D762 /* Build configuration list for PBXNativeTarget "WeatherFergCast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C25531D918DBC20C0089D762 /* Debug */,
+				C25531DA18DBC20C0089D762 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C25531DB18DBC20C0089D762 /* Build configuration list for PBXNativeTarget "WeatherFergCastTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C25531DC18DBC20C0089D762 /* Debug */,
+				C25531DD18DBC20C0089D762 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C25531A418DBC20C0089D762 /* Project object */;
+}
