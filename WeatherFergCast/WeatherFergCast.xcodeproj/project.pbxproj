@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		51BE16B576094AF7B888CD03 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECEB0E80EABE4BF59CD61C50 /* libPods.a */; };
+		C210D37118DD1DDA00AF5208 /* WFCModelCurrentConditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C210D37018DD1DDA00AF5208 /* WFCModelCurrentConditions.m */; };
+		C210D37418DD21EA00AF5208 /* WFCModelWeatherForecast.m in Sources */ = {isa = PBXBuildFile; fileRef = C210D37318DD21EA00AF5208 /* WFCModelWeatherForecast.m */; };
+		C210D37718DD269A00AF5208 /* WFCModelSingleDayForecast.m in Sources */ = {isa = PBXBuildFile; fileRef = C210D37618DD269A00AF5208 /* WFCModelSingleDayForecast.m */; };
+		C210D37F18DDDFDB00AF5208 /* SampleBadJson.json in Resources */ = {isa = PBXBuildFile; fileRef = C210D37C18DDDFDB00AF5208 /* SampleBadJson.json */; };
+		C210D38018DDDFDB00AF5208 /* SampleWeatherDubln.json in Resources */ = {isa = PBXBuildFile; fileRef = C210D37D18DDDFDB00AF5208 /* SampleWeatherDubln.json */; };
+		C210D38118DDDFDB00AF5208 /* SampleWeatherMissingData.json in Resources */ = {isa = PBXBuildFile; fileRef = C210D37E18DDDFDB00AF5208 /* SampleWeatherMissingData.json */; };
+		C210D38418DDE01A00AF5208 /* WFCWeatherDataBinderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C210D38318DDE01A00AF5208 /* WFCWeatherDataBinderTests.m */; };
+		C210D38718DDE07100AF5208 /* NSBundle+TestBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = C210D38618DDE07100AF5208 /* NSBundle+TestBundle.m */; };
 		C25531B018DBC20C0089D762 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25531AF18DBC20C0089D762 /* Foundation.framework */; };
 		C25531B218DBC20C0089D762 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25531B118DBC20C0089D762 /* CoreGraphics.framework */; };
 		C25531B418DBC20C0089D762 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25531B318DBC20C0089D762 /* UIKit.framework */; };
@@ -19,6 +27,10 @@
 		C25531CA18DBC20C0089D762 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25531AF18DBC20C0089D762 /* Foundation.framework */; };
 		C25531CB18DBC20C0089D762 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25531B318DBC20C0089D762 /* UIKit.framework */; };
 		C25531D318DBC20C0089D762 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C25531D118DBC20C0089D762 /* InfoPlist.strings */; };
+		C2D249E418DBD4D50005BEF6 /* WFCBinderWeatherDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D249E318DBD4D50005BEF6 /* WFCBinderWeatherDataBase.m */; };
+		C2D249E718DBD4DE0005BEF6 /* WFCModelDataAccessBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D249E618DBD4DE0005BEF6 /* WFCModelDataAccessBase.m */; };
+		C2D249EC18DBDB570005BEF6 /* WFCBinderFiveDayForecast.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D249EB18DBDB570005BEF6 /* WFCBinderFiveDayForecast.m */; };
+		C2D249F018DBE0860005BEF6 /* WFCModelFiveDayForecast.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D249EF18DBE0860005BEF6 /* WFCModelFiveDayForecast.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +44,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C210D36F18DD1DDA00AF5208 /* WFCModelCurrentConditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFCModelCurrentConditions.h; sourceTree = "<group>"; };
+		C210D37018DD1DDA00AF5208 /* WFCModelCurrentConditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFCModelCurrentConditions.m; sourceTree = "<group>"; };
+		C210D37218DD21EA00AF5208 /* WFCModelWeatherForecast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFCModelWeatherForecast.h; sourceTree = "<group>"; };
+		C210D37318DD21EA00AF5208 /* WFCModelWeatherForecast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFCModelWeatherForecast.m; sourceTree = "<group>"; };
+		C210D37518DD269A00AF5208 /* WFCModelSingleDayForecast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFCModelSingleDayForecast.h; sourceTree = "<group>"; };
+		C210D37618DD269A00AF5208 /* WFCModelSingleDayForecast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFCModelSingleDayForecast.m; sourceTree = "<group>"; };
+		C210D37C18DDDFDB00AF5208 /* SampleBadJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SampleBadJson.json; sourceTree = "<group>"; };
+		C210D37D18DDDFDB00AF5208 /* SampleWeatherDubln.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SampleWeatherDubln.json; sourceTree = "<group>"; };
+		C210D37E18DDDFDB00AF5208 /* SampleWeatherMissingData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SampleWeatherMissingData.json; sourceTree = "<group>"; };
+		C210D38318DDE01A00AF5208 /* WFCWeatherDataBinderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFCWeatherDataBinderTests.m; sourceTree = "<group>"; };
+		C210D38518DDE07100AF5208 /* NSBundle+TestBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+TestBundle.h"; sourceTree = "<group>"; };
+		C210D38618DDE07100AF5208 /* NSBundle+TestBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+TestBundle.m"; sourceTree = "<group>"; };
 		C25531AC18DBC20C0089D762 /* WeatherFergCast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherFergCast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C25531AF18DBC20C0089D762 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C25531B118DBC20C0089D762 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -47,6 +71,15 @@
 		C25531C818DBC20C0089D762 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		C25531D018DBC20C0089D762 /* WeatherFergCastTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WeatherFergCastTests-Info.plist"; sourceTree = "<group>"; };
 		C25531D218DBC20C0089D762 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C2D249E218DBD4D50005BEF6 /* WFCBinderWeatherDataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFCBinderWeatherDataBase.h; sourceTree = "<group>"; };
+		C2D249E318DBD4D50005BEF6 /* WFCBinderWeatherDataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFCBinderWeatherDataBase.m; sourceTree = "<group>"; };
+		C2D249E518DBD4DE0005BEF6 /* WFCModelDataAccessBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFCModelDataAccessBase.h; sourceTree = "<group>"; };
+		C2D249E618DBD4DE0005BEF6 /* WFCModelDataAccessBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFCModelDataAccessBase.m; sourceTree = "<group>"; };
+		C2D249EA18DBDB570005BEF6 /* WFCBinderFiveDayForecast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFCBinderFiveDayForecast.h; sourceTree = "<group>"; };
+		C2D249EB18DBDB570005BEF6 /* WFCBinderFiveDayForecast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFCBinderFiveDayForecast.m; sourceTree = "<group>"; };
+		C2D249ED18DBDD420005BEF6 /* WFCWeatherConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WFCWeatherConstants.h; sourceTree = "<group>"; };
+		C2D249EE18DBE0860005BEF6 /* WFCModelFiveDayForecast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFCModelFiveDayForecast.h; sourceTree = "<group>"; };
+		C2D249EF18DBE0860005BEF6 /* WFCModelFiveDayForecast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFCModelFiveDayForecast.m; sourceTree = "<group>"; };
 		CD48C643127A416193DA4DE4 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		ECEB0E80EABE4BF59CD61C50 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -76,6 +109,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C210D37A18DDDF7700AF5208 /* DataAccessTests */ = {
+			isa = PBXGroup;
+			children = (
+				C210D38218DDE00300AF5208 /* BinderTests */,
+				C210D37B18DDDFC000AF5208 /* SampleServerResponses */,
+			);
+			path = DataAccessTests;
+			sourceTree = "<group>";
+		};
+		C210D37B18DDDFC000AF5208 /* SampleServerResponses */ = {
+			isa = PBXGroup;
+			children = (
+				C210D37C18DDDFDB00AF5208 /* SampleBadJson.json */,
+				C210D37D18DDDFDB00AF5208 /* SampleWeatherDubln.json */,
+				C210D37E18DDDFDB00AF5208 /* SampleWeatherMissingData.json */,
+			);
+			path = SampleServerResponses;
+			sourceTree = "<group>";
+		};
+		C210D38218DDE00300AF5208 /* BinderTests */ = {
+			isa = PBXGroup;
+			children = (
+				C210D38318DDE01A00AF5208 /* WFCWeatherDataBinderTests.m */,
+			);
+			path = BinderTests;
+			sourceTree = "<group>";
+		};
 		C25531A318DBC20C0089D762 = {
 			isa = PBXGroup;
 			children = (
@@ -111,8 +171,10 @@
 		C25531B518DBC20C0089D762 /* WeatherFergCast */ = {
 			isa = PBXGroup;
 			children = (
+				C2D249D518DBC9670005BEF6 /* DataAccess */,
 				C25531BE18DBC20C0089D762 /* WFCAppDelegate.h */,
 				C25531BF18DBC20C0089D762 /* WFCAppDelegate.m */,
+				C2D249ED18DBDD420005BEF6 /* WFCWeatherConstants.h */,
 				C25531C118DBC20C0089D762 /* WFCImages.xcassets */,
 				C25531B618DBC20C0089D762 /* Supporting Files */,
 			);
@@ -133,7 +195,10 @@
 		C25531CE18DBC20C0089D762 /* WeatherFergCastTests */ = {
 			isa = PBXGroup;
 			children = (
+				C210D37A18DDDF7700AF5208 /* DataAccessTests */,
 				C25531CF18DBC20C0089D762 /* Supporting Files */,
+				C210D38518DDE07100AF5208 /* NSBundle+TestBundle.h */,
+				C210D38618DDE07100AF5208 /* NSBundle+TestBundle.m */,
 			);
 			path = WeatherFergCastTests;
 			sourceTree = "<group>";
@@ -145,6 +210,43 @@
 				C25531D118DBC20C0089D762 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C2D249D518DBC9670005BEF6 /* DataAccess */ = {
+			isa = PBXGroup;
+			children = (
+				C2D249E118DBD4790005BEF6 /* Models */,
+				C2D249E018DBD4720005BEF6 /* Binders */,
+			);
+			path = DataAccess;
+			sourceTree = "<group>";
+		};
+		C2D249E018DBD4720005BEF6 /* Binders */ = {
+			isa = PBXGroup;
+			children = (
+				C2D249E218DBD4D50005BEF6 /* WFCBinderWeatherDataBase.h */,
+				C2D249E318DBD4D50005BEF6 /* WFCBinderWeatherDataBase.m */,
+				C2D249EA18DBDB570005BEF6 /* WFCBinderFiveDayForecast.h */,
+				C2D249EB18DBDB570005BEF6 /* WFCBinderFiveDayForecast.m */,
+			);
+			path = Binders;
+			sourceTree = "<group>";
+		};
+		C2D249E118DBD4790005BEF6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C2D249E518DBD4DE0005BEF6 /* WFCModelDataAccessBase.h */,
+				C2D249E618DBD4DE0005BEF6 /* WFCModelDataAccessBase.m */,
+				C2D249EE18DBE0860005BEF6 /* WFCModelFiveDayForecast.h */,
+				C2D249EF18DBE0860005BEF6 /* WFCModelFiveDayForecast.m */,
+				C210D36F18DD1DDA00AF5208 /* WFCModelCurrentConditions.h */,
+				C210D37018DD1DDA00AF5208 /* WFCModelCurrentConditions.m */,
+				C210D37218DD21EA00AF5208 /* WFCModelWeatherForecast.h */,
+				C210D37318DD21EA00AF5208 /* WFCModelWeatherForecast.m */,
+				C210D37518DD269A00AF5208 /* WFCModelSingleDayForecast.h */,
+				C210D37618DD269A00AF5208 /* WFCModelSingleDayForecast.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +337,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C25531D318DBC20C0089D762 /* InfoPlist.strings in Resources */,
+				C210D38118DDDFDB00AF5208 /* SampleWeatherMissingData.json in Resources */,
+				C210D38018DDDFDB00AF5208 /* SampleWeatherDubln.json in Resources */,
+				C210D37F18DDDFDB00AF5208 /* SampleBadJson.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,8 +383,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C210D37118DD1DDA00AF5208 /* WFCModelCurrentConditions.m in Sources */,
+				C2D249F018DBE0860005BEF6 /* WFCModelFiveDayForecast.m in Sources */,
 				C25531BC18DBC20C0089D762 /* main.m in Sources */,
+				C2D249EC18DBDB570005BEF6 /* WFCBinderFiveDayForecast.m in Sources */,
+				C210D37418DD21EA00AF5208 /* WFCModelWeatherForecast.m in Sources */,
+				C2D249E418DBD4D50005BEF6 /* WFCBinderWeatherDataBase.m in Sources */,
+				C210D37718DD269A00AF5208 /* WFCModelSingleDayForecast.m in Sources */,
 				C25531C018DBC20C0089D762 /* WFCAppDelegate.m in Sources */,
+				C2D249E718DBD4DE0005BEF6 /* WFCModelDataAccessBase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +399,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C210D38718DDE07100AF5208 /* NSBundle+TestBundle.m in Sources */,
+				C210D38418DDE01A00AF5208 /* WFCWeatherDataBinderTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
