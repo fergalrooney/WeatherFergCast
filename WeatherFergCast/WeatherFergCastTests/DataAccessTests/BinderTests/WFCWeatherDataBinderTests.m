@@ -8,7 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "WFCBinderFiveDayForecast.h"
-#import "WFCBinderWeatherDataBase.h"
+#import "WFCBinder.h"
 #import "WFCModelFiveDayForecast.h"
 #import "WFCModelCurrentConditions.h"
 #import "WFCModelSingleDayForecast.h"
@@ -39,7 +39,7 @@
  */
 - (void)testBaseClassIsAbstract
 {
-    WFCBinderWeatherDataBase *binder = [WFCBinderWeatherDataBase new];
+    WFCBinder *binder = [WFCBinder new];
     XCTAssertThrows([binder modelForWeatherData:nil parseError:nil],
                     @"Class and method are abstract, only intended to be subclassed");
 }
@@ -50,11 +50,11 @@
  */
 - (void) testSimpleFactory
 {
-    WFCBinderWeatherDataBase *binder = [WFCBinderWeatherDataBase binderForFeature:kWFCWeatherFeatureFiveDayForecast];
+    WFCBinder *binder = [WFCBinder binderForFeature:kWFCWeatherFeatureFiveDayForecast];
     XCTAssertNotNil(binder, @"A valid binder should have been returned for five day forcast");
     XCTAssert([binder isKindOfClass:[WFCBinderFiveDayForecast class]], @"Binder should be of type WFCFiveDayForecastBinder");
     
-    binder = [WFCBinderWeatherDataBase binderForFeature:NSIntegerMax];
+    binder = [WFCBinder binderForFeature:NSIntegerMax];
     XCTAssertNil(binder, @"Binder should be nil for unknown feature");
 }
 /**

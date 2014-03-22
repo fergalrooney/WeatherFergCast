@@ -6,10 +6,10 @@
 //  Copyright (c) 2014 Fergal Rooney. All rights reserved.
 //
 
-#import "WFCBinderWeatherDataBase.h"
+#import "WFCBinder.h"
 #import "WFCBinderFiveDayForecast.h"
 
-@implementation WFCBinderWeatherDataBase
+@implementation WFCBinder
 
 /**
  * @brief
@@ -21,9 +21,9 @@
  * @return
  *      The Concreate instance of WFCWeatherDataBinder
  */
-+ (WFCBinderWeatherDataBase *) binderForFeature:(kWFCWeatherFeatures)feature
++ (WFCBinder *) binderForFeature:(kWFCWeatherFeatures)feature
 {
-    WFCBinderWeatherDataBase *binder = nil;
+    WFCBinder *binder = nil;
     switch (feature) {
         case kWFCWeatherFeatureFiveDayForecast:
             binder = [WFCBinderFiveDayForecast new];

@@ -1,5 +1,5 @@
 //
-//  WFCBinderWeatherDataBase.h
+//  WFCBinder.h
 //  WeatherFergCast
 //
 //  Created by Fergal Rooney on 3/20/14.
@@ -18,12 +18,12 @@ typedef NS_ENUM(NSInteger, kWFCWeatherBinderErrorTypes) {
 static NSString * kWFCWeatherDataBinderErrorDomain = @"com.fergalrooney.WeatherFergCast.BinderErrorDomain";
 
 /**
- * @interface WFCBinderWeatherDataBase
+ * @interface WFCBinder
  * @brief
  *      Abstract class dedicated to binding various server responses from the weather
  *      services APIs.
  */
-@interface WFCBinderWeatherDataBase : NSObject
+@interface WFCBinder : NSObject
 
 /**
  * @brief
@@ -35,7 +35,7 @@ static NSString * kWFCWeatherDataBinderErrorDomain = @"com.fergalrooney.WeatherF
  * @return 
  *      The Concreate instance of WFCWeatherDataBinder
  */
-+ (WFCBinderWeatherDataBase *) binderForFeature:(kWFCWeatherFeatures)feature;
++ (WFCBinder *) binderForFeature:(kWFCWeatherFeatures)feature;
 
 /**
  * @brief

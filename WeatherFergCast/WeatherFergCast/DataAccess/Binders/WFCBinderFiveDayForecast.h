@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "WFCBinderWeatherDataBase.h"
+#import "WFCBinder.h"
 
-@interface WFCBinderFiveDayForecast : WFCBinderWeatherDataBase
+@interface WFCBinderFiveDayForecast : WFCBinder
 
 @end
