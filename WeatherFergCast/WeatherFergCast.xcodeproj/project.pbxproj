@@ -12,8 +12,6 @@
 		C20E7DD118DE1C8C00250F33 /* WFCNetworkAccessForecastTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C20E7DD018DE1C8C00250F33 /* WFCNetworkAccessForecastTests.m */; };
 		C20E7DD418DE2B2E00250F33 /* MainApplication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C20E7DD318DE2B2E00250F33 /* MainApplication.storyboard */; };
 		C20F79FF18DF8F300014D711 /* WFCTableViewCellFiveDayForecast.m in Sources */ = {isa = PBXBuildFile; fileRef = C20F79FE18DF8F300014D711 /* WFCTableViewCellFiveDayForecast.m */; };
-		C20F7A0218DF91F40014D711 /* WFCDataSourceHomeTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C20F7A0118DF91F40014D711 /* WFCDataSourceHomeTableView.m */; };
-		C20F7A0518DF98570014D711 /* WFCDelegateHomeTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C20F7A0418DF98570014D711 /* WFCDelegateHomeTableView.m */; };
 		C20F7A0818DFB3140014D711 /* UIImage+WFCExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C20F7A0718DFB3140014D711 /* UIImage+WFCExtensions.m */; };
 		C20F7A0A18DFD1B90014D711 /* WFCHomeTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C20F7A0918DFD1B90014D711 /* WFCHomeTableHeaderView.xib */; };
 		C210D37118DD1DDA00AF5208 /* WFCModelCurrentConditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C210D37018DD1DDA00AF5208 /* WFCModelCurrentConditions.m */; };
@@ -40,14 +38,16 @@
 		C25531CA18DBC20C0089D762 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25531AF18DBC20C0089D762 /* Foundation.framework */; };
 		C25531CB18DBC20C0089D762 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25531B318DBC20C0089D762 /* UIKit.framework */; };
 		C25531D318DBC20C0089D762 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C25531D118DBC20C0089D762 /* InfoPlist.strings */; };
-		C25F833818DE3CB300CD0A4C /* WFCViewControllerHome.m in Sources */ = {isa = PBXBuildFile; fileRef = C25F833718DE3CB300CD0A4C /* WFCViewControllerHome.m */; };
+		C255B26318E04F95003B5183 /* WFCDataSourceHomeTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C255B25E18E04F95003B5183 /* WFCDataSourceHomeTableView.m */; };
+		C255B26418E04F95003B5183 /* WFCDelegateHomeTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C255B26018E04F95003B5183 /* WFCDelegateHomeTableView.m */; };
+		C255B26518E04F95003B5183 /* WFCViewControllerHome.m in Sources */ = {isa = PBXBuildFile; fileRef = C255B26218E04F95003B5183 /* WFCViewControllerHome.m */; };
+		C255B26D18E04F9D003B5183 /* WFCDataSourceAddCityTable.m in Sources */ = {isa = PBXBuildFile; fileRef = C255B26818E04F9D003B5183 /* WFCDataSourceAddCityTable.m */; };
+		C255B26E18E04F9D003B5183 /* WFCDelegateAddCityTable.m in Sources */ = {isa = PBXBuildFile; fileRef = C255B26A18E04F9D003B5183 /* WFCDelegateAddCityTable.m */; };
+		C255B26F18E04F9D003B5183 /* WFCViewControllerAddCity.m in Sources */ = {isa = PBXBuildFile; fileRef = C255B26C18E04F9D003B5183 /* WFCViewControllerAddCity.m */; };
 		C25F833B18DE411E00CD0A4C /* WFCNavigationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C25F833A18DE411E00CD0A4C /* WFCNavigationManager.m */; };
-		C25F833E18DE4E1100CD0A4C /* WFCViewControllerAddCity.m in Sources */ = {isa = PBXBuildFile; fileRef = C25F833D18DE4E1100CD0A4C /* WFCViewControllerAddCity.m */; };
 		C2AEDCC218DF073C007AB831 /* WFCPersistanceCityNameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C2AEDCC118DF073C007AB831 /* WFCPersistanceCityNameManager.m */; };
 		C2AEDCC518DF0C58007AB831 /* WFCPersistanceCityNameManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2AEDCC418DF0C58007AB831 /* WFCPersistanceCityNameManagerTests.m */; };
 		C2AEDCC818DF0F44007AB831 /* WFCPersistanceCityNamesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C2AEDCC718DF0F44007AB831 /* WFCPersistanceCityNamesModel.m */; };
-		C2AEDCCC18DF221E007AB831 /* WFCDataSourceAddCityTable.m in Sources */ = {isa = PBXBuildFile; fileRef = C2AEDCCB18DF221E007AB831 /* WFCDataSourceAddCityTable.m */; };
-		C2AEDCD018DF2AA0007AB831 /* WFCDelegateAddCityTable.m in Sources */ = {isa = PBXBuildFile; fileRef = C2AEDCCF18DF2AA0007AB831 /* WFCDelegateAddCityTable.m */; };
 		C2AEDCD418DF3768007AB831 /* WFCCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = C2AEDCD318DF3768007AB831 /* WFCCommand.m */; };
 		C2AEDCD718DF37F3007AB831 /* WFCCommandInvokeForecastRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C2AEDCD618DF37F3007AB831 /* WFCCommandInvokeForecastRequest.m */; };
 		C2D249E418DBD4D50005BEF6 /* WFCBinder.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D249E318DBD4D50005BEF6 /* WFCBinder.m */; };
@@ -76,10 +76,6 @@
 		C20E7DD318DE2B2E00250F33 /* MainApplication.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainApplication.storyboard; sourceTree = "<group>"; };
 		C20F79FD18DF8F300014D711 /* WFCTableViewCellFiveDayForecast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFCTableViewCellFiveDayForecast.h; sourceTree = "<group>"; };
 		C20F79FE18DF8F300014D711 /* WFCTableViewCellFiveDayForecast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFCTableViewCellFiveDayForecast.m; sourceTree = "<group>"; };
-		C20F7A0018DF91F40014D711 /* WFCDataSourceHomeTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFCDataSourceHomeTableView.h; sourceTree = "<group>"; };
-		C20F7A0118DF91F40014D711 /* WFCDataSourceHomeTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFCDataSourceHomeTableView.m; sourceTree = "<group>"; };
-		C20F7A0318DF98570014D711 /* WFCDelegateHomeTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFCDelegateHomeTableView.h; sourceTree = "<group>"; };
-		C20F7A0418DF98570014D711 /* WFCDelegateHomeTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFCDelegateHomeTableView.m; sourceTree = "<group>"; };
 		C20F7A0618DFB3140014D711 /* UIImage+WFCExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WFCExtensions.h"; sourceTree = "<group>"; };
 		C20F7A0718DFB3140014D711 /* UIImage+WFCExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WFCExtensions.m"; sourceTree = "<group>"; };
 		C20F7A0918DFD1B90014D711 /* WFCHomeTableHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WFCHomeTableHeaderView.xib; sourceTree = "<group>"; };
@@ -119,21 +115,25 @@
 		C25531C818DBC20C0089D762 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		C25531D018DBC20C0089D762 /* WeatherFergCastTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WeatherFergCastTests-Info.plist"; sourceTree = "<group>"; };
 		C25531D218DBC20C0089D762 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C25F833618DE3CB300CD0A4C /* WFCViewControllerHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFCViewControllerHome.h; sourceTree = "<group>"; };
-		C25F833718DE3CB300CD0A4C /* WFCViewControllerHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFCViewControllerHome.m; sourceTree = "<group>"; };
+		C255B25D18E04F95003B5183 /* WFCDataSourceHomeTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFCDataSourceHomeTableView.h; sourceTree = "<group>"; };
+		C255B25E18E04F95003B5183 /* WFCDataSourceHomeTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFCDataSourceHomeTableView.m; sourceTree = "<group>"; };
+		C255B25F18E04F95003B5183 /* WFCDelegateHomeTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFCDelegateHomeTableView.h; sourceTree = "<group>"; };
+		C255B26018E04F95003B5183 /* WFCDelegateHomeTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFCDelegateHomeTableView.m; sourceTree = "<group>"; };
+		C255B26118E04F95003B5183 /* WFCViewControllerHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFCViewControllerHome.h; sourceTree = "<group>"; };
+		C255B26218E04F95003B5183 /* WFCViewControllerHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFCViewControllerHome.m; sourceTree = "<group>"; };
+		C255B26718E04F9D003B5183 /* WFCDataSourceAddCityTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFCDataSourceAddCityTable.h; sourceTree = "<group>"; };
+		C255B26818E04F9D003B5183 /* WFCDataSourceAddCityTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFCDataSourceAddCityTable.m; sourceTree = "<group>"; };
+		C255B26918E04F9D003B5183 /* WFCDelegateAddCityTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFCDelegateAddCityTable.h; sourceTree = "<group>"; };
+		C255B26A18E04F9D003B5183 /* WFCDelegateAddCityTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFCDelegateAddCityTable.m; sourceTree = "<group>"; };
+		C255B26B18E04F9D003B5183 /* WFCViewControllerAddCity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFCViewControllerAddCity.h; sourceTree = "<group>"; };
+		C255B26C18E04F9D003B5183 /* WFCViewControllerAddCity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFCViewControllerAddCity.m; sourceTree = "<group>"; };
 		C25F833918DE411E00CD0A4C /* WFCNavigationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFCNavigationManager.h; sourceTree = "<group>"; };
 		C25F833A18DE411E00CD0A4C /* WFCNavigationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFCNavigationManager.m; sourceTree = "<group>"; };
-		C25F833C18DE4E1100CD0A4C /* WFCViewControllerAddCity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFCViewControllerAddCity.h; sourceTree = "<group>"; };
-		C25F833D18DE4E1100CD0A4C /* WFCViewControllerAddCity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFCViewControllerAddCity.m; sourceTree = "<group>"; };
 		C2AEDCC018DF073C007AB831 /* WFCPersistanceCityNameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFCPersistanceCityNameManager.h; sourceTree = "<group>"; };
 		C2AEDCC118DF073C007AB831 /* WFCPersistanceCityNameManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFCPersistanceCityNameManager.m; sourceTree = "<group>"; };
 		C2AEDCC418DF0C58007AB831 /* WFCPersistanceCityNameManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFCPersistanceCityNameManagerTests.m; sourceTree = "<group>"; };
 		C2AEDCC618DF0F44007AB831 /* WFCPersistanceCityNamesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFCPersistanceCityNamesModel.h; sourceTree = "<group>"; };
 		C2AEDCC718DF0F44007AB831 /* WFCPersistanceCityNamesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFCPersistanceCityNamesModel.m; sourceTree = "<group>"; };
-		C2AEDCCA18DF221E007AB831 /* WFCDataSourceAddCityTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFCDataSourceAddCityTable.h; sourceTree = "<group>"; };
-		C2AEDCCB18DF221E007AB831 /* WFCDataSourceAddCityTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFCDataSourceAddCityTable.m; sourceTree = "<group>"; };
-		C2AEDCCE18DF2AA0007AB831 /* WFCDelegateAddCityTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFCDelegateAddCityTable.h; sourceTree = "<group>"; };
-		C2AEDCCF18DF2AA0007AB831 /* WFCDelegateAddCityTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFCDelegateAddCityTable.m; sourceTree = "<group>"; };
 		C2AEDCD218DF3768007AB831 /* WFCCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFCCommand.h; sourceTree = "<group>"; };
 		C2AEDCD318DF3768007AB831 /* WFCCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFCCommand.m; sourceTree = "<group>"; };
 		C2AEDCD518DF37F3007AB831 /* WFCCommandInvokeForecastRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFCCommandInvokeForecastRequest.h; sourceTree = "<group>"; };
@@ -343,15 +343,37 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C255B25C18E04F95003B5183 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C255B25D18E04F95003B5183 /* WFCDataSourceHomeTableView.h */,
+				C255B25E18E04F95003B5183 /* WFCDataSourceHomeTableView.m */,
+				C255B25F18E04F95003B5183 /* WFCDelegateHomeTableView.h */,
+				C255B26018E04F95003B5183 /* WFCDelegateHomeTableView.m */,
+				C255B26118E04F95003B5183 /* WFCViewControllerHome.h */,
+				C255B26218E04F95003B5183 /* WFCViewControllerHome.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C255B26618E04F9D003B5183 /* AddCity */ = {
+			isa = PBXGroup;
+			children = (
+				C255B26718E04F9D003B5183 /* WFCDataSourceAddCityTable.h */,
+				C255B26818E04F9D003B5183 /* WFCDataSourceAddCityTable.m */,
+				C255B26918E04F9D003B5183 /* WFCDelegateAddCityTable.h */,
+				C255B26A18E04F9D003B5183 /* WFCDelegateAddCityTable.m */,
+				C255B26B18E04F9D003B5183 /* WFCViewControllerAddCity.h */,
+				C255B26C18E04F9D003B5183 /* WFCViewControllerAddCity.m */,
+			);
+			path = AddCity;
+			sourceTree = "<group>";
+		};
 		C25F833518DE39E100CD0A4C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				C2AEDCCD18DF2A87007AB831 /* ViewDelegates */,
-				C2AEDCC918DF2202007AB831 /* ViewDataSources */,
-				C25F833618DE3CB300CD0A4C /* WFCViewControllerHome.h */,
-				C25F833718DE3CB300CD0A4C /* WFCViewControllerHome.m */,
-				C25F833C18DE4E1100CD0A4C /* WFCViewControllerAddCity.h */,
-				C25F833D18DE4E1100CD0A4C /* WFCViewControllerAddCity.m */,
+				C255B26618E04F9D003B5183 /* AddCity */,
+				C255B25C18E04F95003B5183 /* Home */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -373,28 +395,6 @@
 				C2AEDCC418DF0C58007AB831 /* WFCPersistanceCityNameManagerTests.m */,
 			);
 			path = PersistanceTests;
-			sourceTree = "<group>";
-		};
-		C2AEDCC918DF2202007AB831 /* ViewDataSources */ = {
-			isa = PBXGroup;
-			children = (
-				C2AEDCCA18DF221E007AB831 /* WFCDataSourceAddCityTable.h */,
-				C2AEDCCB18DF221E007AB831 /* WFCDataSourceAddCityTable.m */,
-				C20F7A0018DF91F40014D711 /* WFCDataSourceHomeTableView.h */,
-				C20F7A0118DF91F40014D711 /* WFCDataSourceHomeTableView.m */,
-			);
-			path = ViewDataSources;
-			sourceTree = "<group>";
-		};
-		C2AEDCCD18DF2A87007AB831 /* ViewDelegates */ = {
-			isa = PBXGroup;
-			children = (
-				C2AEDCCE18DF2AA0007AB831 /* WFCDelegateAddCityTable.h */,
-				C2AEDCCF18DF2AA0007AB831 /* WFCDelegateAddCityTable.m */,
-				C20F7A0318DF98570014D711 /* WFCDelegateHomeTableView.h */,
-				C20F7A0418DF98570014D711 /* WFCDelegateHomeTableView.m */,
-			);
-			path = ViewDelegates;
 			sourceTree = "<group>";
 		};
 		C2AEDCD118DF3743007AB831 /* CommandObjects */ = {
@@ -606,29 +606,29 @@
 				C2AEDCD718DF37F3007AB831 /* WFCCommandInvokeForecastRequest.m in Sources */,
 				C20E7DCF18DE161F00250F33 /* WFCNetworkAccessForecast.m in Sources */,
 				C20F7A0818DFB3140014D711 /* UIImage+WFCExtensions.m in Sources */,
-				C2AEDCD018DF2AA0007AB831 /* WFCDelegateAddCityTable.m in Sources */,
+				C255B26318E04F95003B5183 /* WFCDataSourceHomeTableView.m in Sources */,
+				C255B26518E04F95003B5183 /* WFCViewControllerHome.m in Sources */,
 				C2AEDCD418DF3768007AB831 /* WFCCommand.m in Sources */,
 				C210D37118DD1DDA00AF5208 /* WFCModelCurrentConditions.m in Sources */,
 				C2D249F018DBE0860005BEF6 /* WFCModelFiveDayForecast.m in Sources */,
 				C25531BC18DBC20C0089D762 /* main.m in Sources */,
 				C2D249EC18DBDB570005BEF6 /* WFCBinderFiveDayForecast.m in Sources */,
+				C255B26D18E04F9D003B5183 /* WFCDataSourceAddCityTable.m in Sources */,
 				C210D37418DD21EA00AF5208 /* WFCModelWeatherForecast.m in Sources */,
 				C2EDD7F118DF5E5B004DA7DB /* MKNetworkEngine+WFCExtensions.m in Sources */,
-				C20F7A0218DF91F40014D711 /* WFCDataSourceHomeTableView.m in Sources */,
 				C20F79FF18DF8F300014D711 /* WFCTableViewCellFiveDayForecast.m in Sources */,
-				C25F833E18DE4E1100CD0A4C /* WFCViewControllerAddCity.m in Sources */,
-				C2AEDCCC18DF221E007AB831 /* WFCDataSourceAddCityTable.m in Sources */,
 				C2D249E418DBD4D50005BEF6 /* WFCBinder.m in Sources */,
 				C210D39118DDEFF700AF5208 /* WFCNetworkAccess.m in Sources */,
 				C210D39418DDF4CE00AF5208 /* WFCNetworkAccessMKNetwork.m in Sources */,
-				C20F7A0518DF98570014D711 /* WFCDelegateHomeTableView.m in Sources */,
 				C210D37718DD269A00AF5208 /* WFCModelSingleDayForecast.m in Sources */,
 				C25531C018DBC20C0089D762 /* WFCAppDelegate.m in Sources */,
+				C255B26F18E04F9D003B5183 /* WFCViewControllerAddCity.m in Sources */,
 				C2AEDCC818DF0F44007AB831 /* WFCPersistanceCityNamesModel.m in Sources */,
 				C25F833B18DE411E00CD0A4C /* WFCNavigationManager.m in Sources */,
 				C2D249E718DBD4DE0005BEF6 /* WFCModelDataAccessBase.m in Sources */,
 				C2EDD7F818DF6BA6004DA7DB /* WFCModelAccessFiveDayForecast.m in Sources */,
-				C25F833818DE3CB300CD0A4C /* WFCViewControllerHome.m in Sources */,
+				C255B26418E04F95003B5183 /* WFCDelegateHomeTableView.m in Sources */,
+				C255B26E18E04F9D003B5183 /* WFCDelegateAddCityTable.m in Sources */,
 				C2AEDCC218DF073C007AB831 /* WFCPersistanceCityNameManager.m in Sources */,
 				C210D39A18DDFE1A00AF5208 /* WFCNetworkAccessRequest.m in Sources */,
 			);
