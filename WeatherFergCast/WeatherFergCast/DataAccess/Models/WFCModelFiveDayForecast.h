@@ -18,6 +18,7 @@
  */
 @interface WFCModelFiveDayForecast : WFCModelDataAccessBase
 
+@property (nonatomic, copy) NSString *responseCityName;
 /**
  * @property currentConditions
  * @brief

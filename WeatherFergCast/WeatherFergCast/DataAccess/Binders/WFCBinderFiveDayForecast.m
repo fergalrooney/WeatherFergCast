@@ -14,6 +14,7 @@
 /**
  *      Key constants for the data elements in the JSON response
  */
+static NSString *kWFCBinderFiveDayForecastQueryKey = @"query";
 static NSString *kWFCBinderFiveDayForecastCloudCoverKey = @"cloudcover";
 static NSString *kWFCBinderFiveDayForecastHumidityKey = @"humidity";
 static NSString *kWFCBinderFiveDayForecastObservationTimeKey = @"observation_time";
@@ -43,6 +44,7 @@ static NSString *kWFCBinderFiveDayForecastWindDirectionKey = @"winddirection";
 static NSInteger kWFCBinderFiveDayForecastCurrentConditionsIndex = 0;
 static NSInteger kWFCBinderFiveDayForecastWeatherIconIndex = 0;
 static NSInteger kWFCBinderFiveDayForecastWeatherDescriptionIndex = 0;
+static NSInteger kWFCBinderFiveDayForecastWeatherRequestInfoIndex = 0;
 
 @interface WFCBinderFiveDayForecast ()
 
@@ -110,11 +112,16 @@ static NSInteger kWFCBinderFiveDayForecastWeatherDescriptionIndex = 0;
  */
 - (WFCModelFiveDayForecast *) modelFromJsonDictionary:(NSDictionary *)jsonDictionary
 {
-    WFCModelFiveDayForecast *model = nil;
+    WFCModelFiveDayForecast *model = [WFCModelFiveDayForecast new];;
     WFCModelCurrentConditions *currentConditionsModel = [WFCModelCurrentConditions new];
     
     NSArray *currentConditionsArray = [jsonDictionary valueForKeyPath:@"data.current_condition"];
+    NSArray *requestInfoArray = [jsonDictionary valueForKeyPath:@"data.request"];
     
+    if (requestInfoArray && [requestInfoArray count] > kWFCBinderFiveDayForecastWeatherRequestInfoIndex) {
+        NSDictionary *requestInfoDict = requestInfoArray[kWFCBinderFiveDayForecastWeatherRequestInfoIndex];
+        model.responseCityName = requestInfoDict[kWFCBinderFiveDayForecastQueryKey];
+    }
     /*
      * Current Conditions is suprisingly an array, but always only one object. Need to check
      * if object is an array before we can proceed
@@ -153,7 +160,6 @@ static NSInteger kWFCBinderFiveDayForecastWeatherDescriptionIndex = 0;
         currentConditionsModel.windSpeedKilometersPerHour = currentConditions[kWFCBinderFiveDayForecastWindSpeedKmphKey];
         currentConditionsModel.windSpeedMilesPerHour = currentConditions[kWFCBinderFiveDayForecastWindSpeedMphKey];
         
-        model = [WFCModelFiveDayForecast new];
         model.currentConditions = currentConditionsModel;
     }
     

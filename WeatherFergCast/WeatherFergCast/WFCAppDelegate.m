@@ -7,15 +7,21 @@
 //
 
 #import "WFCAppDelegate.h"
+#import "WFCPersistanceCityNameManager.h"
 
 @implementation WFCAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+    
+    self.window.tintColor = [UIColor lightGrayColor];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor], NSFontAttributeName : [UIFont fontWithName:@"HelveticaNeue-Light" size:20.0f]}];
+    
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor blackColor]];
+    
+    [[UITextField appearanceWhenContainedIn:[UISearchBar class], nil] setTextColor:[UIColor whiteColor]];
+    [[UILabel appearanceWhenContainedIn:[UISearchBar class], nil] setTextColor:[UIColor whiteColor]];
     
     return YES;
 }
@@ -28,6 +34,7 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
+    [[WFCPersistanceCityNameManager sharedCityNameManager] persistCityNames];
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
@@ -44,6 +51,7 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
+    [[WFCPersistanceCityNameManager sharedCityNameManager] persistCityNames];
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 

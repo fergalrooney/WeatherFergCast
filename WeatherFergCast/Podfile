@@ -2,3 +2,4 @@ xcodeproj 'WeatherFergCast.xcodeproj'
 
 pod 'MKNetworkKit'
 pod 'OCMock'
+pod 'AsyncImageDownloader'

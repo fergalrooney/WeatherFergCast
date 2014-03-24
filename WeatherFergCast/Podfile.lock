@@ -1,14 +1,17 @@
 PODS:
+  - AsyncImageDownloader (1.0.0)
   - MKNetworkKit (0.87):
     - Reachability (~> 3.1.0)
   - OCMock (2.2.3)
   - Reachability (3.1.1)
 
 DEPENDENCIES:
+  - AsyncImageDownloader
   - MKNetworkKit
   - OCMock
 
 SPEC CHECKSUMS:
+  AsyncImageDownloader: d0389339b38f764eebb10cee72c9e34142b8a523
   MKNetworkKit: f174100f92473012138b6b1c3040266af8d43a14
   OCMock: 74e4ddbcef134170dcc844f91c691f13868075d7
   Reachability: be4883bb93f31e38266ae3365e5600a317aae735

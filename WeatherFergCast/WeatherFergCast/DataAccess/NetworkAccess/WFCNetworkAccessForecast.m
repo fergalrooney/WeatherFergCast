@@ -29,7 +29,8 @@
     
     WFCNetworkAccessRequest *request = [WFCNetworkAccessRequest new];
     request.restfulServicePath = @"free/v1/weather.ashx";
-    request.requestParams = @{@"q" : cityName,
+    request.requestParams = @{@"format" : @"json",
+                              @"q" : cityName,
                               @"num_of_days" : @"5",
                               @"key" : @"akzyhnb67yf2fdjz2jjahwxz"};
     request.requestMethod = @"GET";
