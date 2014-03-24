@@ -8,7 +8,7 @@
 
 #import "WFCDelegateAddCityTable.h"
 #import "WFCPersistanceCityNameManager.h"
-#import "WFCCommandCitySelected.h"
+#import "WFCCommandInvokeForecastRequest.h"
 #import "WFCNavigationManager.h"
 #import "WFCModelAccessFiveDayForecast.h"
 #import "WFCModelFiveDayForecast.h"
@@ -16,8 +16,11 @@
 @interface WFCDelegateAddCityTable ()
 {
     WFCPersistanceCityNameManager *cityNameManager_;
-    WFCCommandCitySelected *citySelectedCommand_;
+    WFCCommandInvokeForecastRequest *citySelectedCommand_;
 }
+
+@property (nonatomic, strong) IBOutlet WFCCommand *invokeRequestCommand;
+
 @end
 
 @implementation WFCDelegateAddCityTable
@@ -36,11 +39,11 @@
 {
     NSString *currentCityName = [WFCModelAccessFiveDayForecast sharedInstance].fiveDayForecast.responseCityName;
     NSString *selectedCityName = [cityNameManager_ cityNames][indexPath.row];
-    if (![currentCityName isEqualToString:selectedCityName]) {
-        [[WFCModelAccessFiveDayForecast sharedInstance] getFivedayForcastForCity:selectedCityName];
-    }
-    
     [cityNameManager_ setSelectedCity:selectedCityName];
+    
+    if (![currentCityName isEqualToString:selectedCityName]) {
+        [self.invokeRequestCommand execute];
+    }
     
     [[WFCNavigationManager sharedNavManager] popToHomeViewController];
 }

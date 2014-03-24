@@ -14,6 +14,7 @@
 #import "WFCDataSourceHomeTableView.h"
 #import "WFCDelegateHomeTableView.h"
 #import "WFCPersistanceCityNameManager.h"
+#import "WFCCommand.h"
 
 @interface WFCViewControllerHome ()
 
@@ -21,6 +22,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *currentConditionsTemperatureLabel;
 @property (weak, nonatomic) IBOutlet UILabel *cityNameLabel;
 @property (weak, nonatomic) IBOutlet UITableView *fiveDayForecastTableView;
+@property (strong, nonatomic) IBOutlet WFCCommand *invokeForecastCommand;
 @property (strong, nonatomic) WFCDataSourceHomeTableView *dataSourceHomeViewTable;
 @property (strong, nonatomic) WFCDelegateHomeTableView *delegateHomeViewTable;
 - (IBAction)tempUnitChanged:(id)sender;
@@ -72,7 +74,7 @@
     
     NSString *selectedCity = [[WFCPersistanceCityNameManager sharedCityNameManager] selectedCity];
     if (selectedCity && [selectedCity length] > 0) {
-        [[WFCModelAccessFiveDayForecast sharedInstance] getFivedayForcastForCity:selectedCity];
+        [self.invokeForecastCommand execute];
     }
 }
 

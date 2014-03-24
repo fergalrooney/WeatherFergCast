@@ -181,9 +181,16 @@
                         <outlet property="currentConditionsDescriptionLabel" destination="2eS-EE-va6" id="gQd-Jf-P56"/>
                         <outlet property="currentConditionsTemperatureLabel" destination="1Iv-IU-ZwH" id="lnm-z8-iI8"/>
                         <outlet property="fiveDayForecastTableView" destination="crE-NP-rTn" id="gMn-ti-mjT"/>
+                        <outlet property="invokeForecastCommand" destination="vYn-FA-4kT" id="sVV-6V-JB4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PJ6-2T-TBd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="vYn-FA-4kT" customClass="WFCCommandInvokeForecastRequest">
+                    <connections>
+                        <outlet property="delegate" destination="exg-GN-ZCQ" id="ZJv-73-y6K"/>
+                    </connections>
+                </customObject>
+                <customObject id="exg-GN-ZCQ" customClass="WFCPersistanceCityNameManager"/>
                 <customObject id="01z-nA-ibV" customClass="WFCNavigationManager"/>
             </objects>
             <point key="canvasLocation" x="936" y="-560"/>
@@ -216,6 +223,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexColor" red="0.998046875" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="sectionIndexBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="sXV-ly-3O1" id="57G-I7-y1i"/>
+                                    <outlet property="delegate" destination="QRL-Ra-UnN" id="Pjj-cL-SFn"/>
+                                </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="toT-mZ-tKa">
                                 <rect key="frame" x="276" y="21" width="46" height="41"/>
@@ -253,9 +264,27 @@
                     <connections>
                         <outlet property="addCityEditButton" destination="toT-mZ-tKa" id="QIv-Aq-s5f"/>
                         <outlet property="cityNameTableView_" destination="vSP-Oy-ghd" id="DpO-SI-rtX"/>
+                        <outlet property="invokeForecastCommand" destination="Gsk-AP-API" id="xji-rX-76p"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6jP-Hm-AHF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="sXV-ly-3O1" customClass="WFCDataSourceAddCityTable"/>
+                <customObject id="QRL-Ra-UnN" customClass="WFCDelegateAddCityTable">
+                    <connections>
+                        <outlet property="invokeRequestCommand" destination="SWs-xt-sLD" id="Mgv-OT-PAK"/>
+                    </connections>
+                </customObject>
+                <customObject id="Gsk-AP-API" customClass="WFCCommandInvokeForecastRequest">
+                    <connections>
+                        <outlet property="delegate" destination="iUs-I6-aF6" id="ldc-Bh-SH3"/>
+                    </connections>
+                </customObject>
+                <customObject id="SWs-xt-sLD" customClass="WFCCommandInvokeForecastRequest">
+                    <connections>
+                        <outlet property="delegate" destination="T3s-A1-dMa" id="KX8-Tv-TQy"/>
+                    </connections>
+                </customObject>
+                <customObject id="T3s-A1-dMa" customClass="WFCPersistanceCityNameManager"/>
             </objects>
             <point key="canvasLocation" x="1350" y="-560"/>
         </scene>

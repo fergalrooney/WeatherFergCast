@@ -68,8 +68,11 @@ static WFCPersistanceCityNameManager *sharedInstance = nil;
     self = [super init];
     if (!self) return nil;
     
-    [self createAppDocumentDirectoryIfNeeded];
-    [self createCityNamesModel];
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        [self createAppDocumentDirectoryIfNeeded];
+        [self createCityNamesModel];
+    });
     
     return self;
 }

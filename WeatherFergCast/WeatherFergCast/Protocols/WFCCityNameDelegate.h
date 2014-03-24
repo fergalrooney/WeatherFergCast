@@ -1,5 +1,5 @@
 //
-//  WFCDelegateSetCityName.h
+//  WFCCityNameDelegate.h
 //  WeatherFergCast
 //
 //  Created by Fergal Rooney on 3/23/14.
@@ -7,14 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "WFCCommand.h"
 
-@class WFCCommandCitySelected;
+@protocol WFCCityNameDelegate <NSObject>
 
-@protocol WFCDelegateSetCityName <NSObject>
-
-@required
-
-- (NSString *) cityNameSelected;
+- (NSString *) selectedCity;
 
 @end

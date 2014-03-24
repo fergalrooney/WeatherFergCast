@@ -7,14 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "WFCCityNameDelegate.h"
 /**
  * @interface WFCPersistanceCityNameManager
  * @brief
  *      Singleton class to manage the lifetime of the city names
  *      the user wants to keep track of.
  */
-@interface WFCPersistanceCityNameManager : NSObject
+@interface WFCPersistanceCityNameManager : NSObject <WFCCityNameDelegate>
 
 /**
  * @brief

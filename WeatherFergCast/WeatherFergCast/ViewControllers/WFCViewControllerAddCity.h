@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "WFCDelegateSetCityName.h"
 #import "WFCForecastObserver.h"
+#import "WFCCityNameDelegate.h"
 
-@interface WFCViewControllerAddCity : UIViewController <UISearchBarDelegate, WFCForecastObserver>
+@interface WFCViewControllerAddCity : UIViewController <UISearchBarDelegate, WFCForecastObserver, WFCCityNameDelegate>
 
 @end

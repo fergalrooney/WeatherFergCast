@@ -14,14 +14,17 @@
 #import "WFCModelFiveDayForecast.h"
 #import "MKNetworkEngine+WFCExtensions.h"
 #import "WFCModelAccessFiveDayForecast.h"
+#import "WFCCommand.h"
 
 @interface WFCViewControllerAddCity ()
 
 @property (weak, nonatomic) IBOutlet UITableView *cityNameTableView;
 @property (strong, nonatomic) WFCDataSourceAddCityTable *addCityTableDataSource;
 @property (weak, nonatomic) IBOutlet UIButton *addCityEditButton;
+@property (strong, nonatomic) IBOutlet WFCCommand *invokeForecastCommand;
 @property (strong, nonatomic) WFCDelegateAddCityTable *addCityTableDelegate;
 @property (strong, nonatomic) WFCNetworkAccessForecast *networkAccessForecast;
+@property (strong, nonatomic) NSString *cityNameSearched;
 
 - (IBAction)setTableEditable:(id)sender;
 
@@ -34,6 +37,8 @@
 @synthesize addCityTableDelegate = addCityTableDataDelegate_;
 @synthesize addCityEditButton = addCityEditButton_;
 @synthesize networkAccessForecast = networkAccessForecast_;
+@synthesize cityNameSearched = cityNameSearched_;
+@synthesize invokeForecastCommand = invokeForecastCommand_;
 
 #pragma mark - View Lifecycle
 
@@ -41,10 +46,6 @@
 {
     [super viewDidLoad];
     
-    self.addCityTableDataSource = [WFCDataSourceAddCityTable new];
-    self.addCityTableDelegate = [WFCDelegateAddCityTable new];
-    cityNameTableView_.dataSource = addCityTableDataSource_;
-    cityNameTableView_.delegate = addCityTableDataDelegate_;
     cityNameTableView_.backgroundColor = [UIColor blackColor];
     
     [addCityEditButton_ setTitle:@"Edit" forState:UIControlStateNormal];
@@ -68,9 +69,9 @@
 {
     [self.view endEditing:YES];
     
-    NSString *cityName = searchBar.text;
-    [[WFCModelAccessFiveDayForecast sharedInstance] getFivedayForcastForCity:cityName];
-    
+    self.cityNameSearched = searchBar.text;
+    [invokeForecastCommand_ execute];
+
 }
 
 #pragma mark - UIButton (Edit Button) Callbacks
@@ -100,4 +101,10 @@
     [cityNameTableView_ reloadData];
 }
 
+#pragma mark - WFCCityNameDelegate Protocol implementation
+
+- (NSString *) selectedCity
+{
+    return cityNameSearched_;
+}
 @end
